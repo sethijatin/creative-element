@@ -106,7 +106,7 @@ Aligned evaluates if the two WebElemnts are aligned. Aligned is validated on the
 * Inside Vertically => isAligned().insideVertically(...); 
 
 ```java
-//Inside Centrally
+//Inside Top
 //Returns true in case the WebElement 1 is top aligned with WebElement 2
 elementOne.isAligned().top(elementTwo);
 ```
