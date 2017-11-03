@@ -17,6 +17,13 @@ Creative Element is created using a WebElement.
 ```java
 CreativeElment element = new CreativeElement(driver.findElement(By.cssSelector(...)));
 ```
+
+Creative Element also returns back the Selenium WebElement so as the tester can continue with their regular selenium operations
+
+```java
+WebElement element = creativeElement.getElement();
+```
+
 Relation between one Creative Element with respect to other can be asserted in the following way:
 ```java
 CreativeElment elementOne = new CreativeElement(driver.findElement(By.cssSelector(...)));
