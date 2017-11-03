@@ -1,7 +1,7 @@
 # Project For Facilitating Page Layout Testing For Websites
 The project aims to provide a simple light weight object (Creative Element) to compare the layout of one Web Element with respect to the Other.
 
-The relation between web elements two web elements is expressed in the following terms:
+The relation between web elements (two web elements) is expressed in the following terms:
 * On
 * Near
 * Inside
