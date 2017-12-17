@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.jatin-sethi</groupId>
-    <artifactId>WebAndMobileAutomation</artifactId>
+    <artifactId>Creative-Element</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <name>Layout-Testing</name>
@@ -25,5 +25,25 @@
             <version>3.4.0</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <forceCreation>true</forceCreation>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
