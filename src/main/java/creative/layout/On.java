@@ -1,9 +1,15 @@
-public class Inside {
+package creative.layout;
+
+public class On {
 
     private CyclicQuad quad;
 
-    protected Inside(CreativeElement e){
+    protected On(CreativeElement e){
         this.quad = e.getCyclicQuad();
+    }
+
+    public boolean overlaps(CreativeElement e){
+        return quad.getRectangle().intersects(e.getCyclicQuad().getRectangle());
     }
 
     private int distanceBetweenTopEdges(CreativeElement e){
@@ -15,8 +21,7 @@ public class Inside {
     private int distanceBetweenBottomEdges(CreativeElement e){
         int bottomEdgeFirstElement = this.quad.getPoint_C().getY();
         int bottomEdgeSecondElement = e.getCyclicQuad().getPoint_C().getY();
-        //return bottomEdgeFirstElement - bottomEdgeSecondElement;
-        return bottomEdgeSecondElement - bottomEdgeFirstElement;
+        return bottomEdgeFirstElement - bottomEdgeSecondElement;
     }
 
     private int distanceBetweenLeftEdges(CreativeElement e){
@@ -28,21 +33,7 @@ public class Inside {
     private int distanceBetweenRightEdges(CreativeElement e){
         int rightEdgeFirstElement = this.quad.getPoint_C().getX();
         int rightEdgeSecondElement = e.getCyclicQuad().getPoint_C().getX();
-        //return rightEdgeFirstElement - rightEdgeSecondElement;
-        return rightEdgeSecondElement - rightEdgeFirstElement;
-    }
-
-    public boolean isInside(CreativeElement e){
-        return e.getCyclicQuad().getRectangle().contains(quad.getRectangle());
-    }
-
-    public boolean isInside(CreativeElement e, Direction direction, int expectedDistance) {
-        return isInside(e) && getDistance(e,direction) == expectedDistance;
-    }
-
-    public boolean isInside(CreativeElement e, Direction direction, int minDistanceInPixels, int maxDistanceInPixels) {
-        int distance = getDistance(e,direction);
-        return isInside(e) && distance >= minDistanceInPixels && distance <= maxDistanceInPixels;
+        return rightEdgeFirstElement - rightEdgeSecondElement;
     }
 
     public int getDistance(CreativeElement e, Direction direction){
@@ -61,7 +52,8 @@ public class Inside {
                 int spaceRight = distanceBetweenRightEdges(e);
                 return spaceRight < 0 ? spaceRight * -1 : spaceRight;
             default:
-                return -32000;
+                return -1;
         }
     }
+
 }

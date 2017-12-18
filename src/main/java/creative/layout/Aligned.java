@@ -1,3 +1,5 @@
+package creative.layout;
+
 public class Aligned {
 
 

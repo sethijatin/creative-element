@@ -1,5 +1,6 @@
-import org.openqa.selenium.Point;
+package creative.layout;
 
+import org.openqa.selenium.Point;
 import java.awt.*;
 
 class CyclicQuad {
