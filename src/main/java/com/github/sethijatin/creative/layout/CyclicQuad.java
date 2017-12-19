@@ -1,4 +1,4 @@
-package creative.layout;
+package com.github.sethijatin.creative.layout;
 
 import org.openqa.selenium.Point;
 import java.awt.*;
