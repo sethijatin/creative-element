@@ -25,7 +25,7 @@ The project is inspired by Galen Framework and has been produced so that relevan
     <groupId>com.github.sethijatin</groupId>
     <artifactId>creative-element</artifactId>
     <version>1.1</version>
-    <scope>test<scope>
+    <scope>test</scope>
 </dependency>
 ```
 
