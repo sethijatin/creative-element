@@ -11,6 +11,24 @@ The project is inspired by Galen Framework and has been produced so that relevan
 
 ### Usage
 
+#### Including It In Your Project POM:
+
+```java
+<repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.sethijatin</groupId>
+    <artifactId>creative-element</artifactId>
+    <version>1.1</version>
+    <scope>test<scope>
+</dependency>
+```
+
 #### Creating a Creative Element:
 
 Creative Element is created using a WebElement. 
