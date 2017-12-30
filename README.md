@@ -17,10 +17,10 @@ The project is inspired by Galen Framework and has been produced so that relevan
 
 ```java
 <repositories>
-	<repository>
-	    <id>jitpack.io</id>
-	    <url>https://jitpack.io</url>
-	</repository>
+     <repository>
+	<id>jitpack.io</id>
+	<url>https://jitpack.io</url>
+     </repository>
 </repositories>
 
 <dependency>
