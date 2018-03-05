@@ -145,7 +145,7 @@ It is possible for the WebElements to be inside another webaligned and still be 
 //Returns true if element one is inside element two and are aligned right in the center (vertically & horizontally).
 elementOne.isAligned().insideCentrally(elementTwo);
 ```
-
+#
 # Browserstack is helping us getting better: 
 
 ![BrowserStack](https://p14.zdusercontent.com/attachment/1015988/hxDtNi8gxI27nLO5m43ndVg9N?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ot6K_8FSCBR-oYA2iznsqQ.VStaRsy4BeXxR5LrcUDVZFCQN0226yJK_bkaevuOBLhi78I8jN9FcVRtip7yLpHucBKIlzeChpm9cYpRn5MBRhRunqrzUIu_uh5tfxAcZhIm5eP334OLdqm_H1oqa4V59r284kj0o5rMrRrK_ECz689ovD0HDqM5ms-Z8OgehavA7nh3rAirhbv0lM4AuHdJytyvYTZXN9D0grOb-BtFnMi7Ksm0T8_vKOcokYfBrMafL1N_hyu22Zzoq9Uj2Plfhw3fXyxKVaq7F7nB3NANPQwxh3p3Ntcn7uSqAeRfgBw.5CsEbEljNlc1SmVVlV3r0A)
