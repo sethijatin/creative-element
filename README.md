@@ -46,8 +46,8 @@ WebElement element = creativeElement.getElement();
 
 Relation between one Creative Element with respect to other can be asserted in the following way:
 ```java
-CreativeElment elementOne = new creative.layout.CreativeElement(driver.findElement(By.cssSelector(...)));
-CreativeElment elementTwo = new creative.layout.CreativeElement(driver.findElement(By.cssSelector(...)));
+CreativeElment elementOne = new CreativeElement(driver.findElement(By.cssSelector(...)));
+CreativeElment elementTwo = new CreativeElement(driver.findElement(By.cssSelector(...)));
 Assert.assertTrue(elementOne.isInside().isInside(elementTwo));
 ```
 
