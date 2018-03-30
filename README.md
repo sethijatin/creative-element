@@ -146,6 +146,54 @@ It is possible for the WebElements to be inside another webaligned and still be 
 elementOne.isAligned().insideCentrally(elementTwo);
 ```
 
+#### Describe
+
+```java
+elementOne.describe().describeRelationTo(elementTwo);
+```
+
+Sample Output For Inside:
+
+**
+ Element is 'inside' the other element to which it is compared to.
+
+ Space Between Element Edges In Pixels
+ Top    : 17
+ Bottom : 17
+ Left   : 194
+ Right  : 195
+
+ Alignment Between Elements
+ Top Aligned : false
+ Bottom Aligned : false
+ Left Aligned : false
+ Right Aligned : false
+ Aligned Inside Horizontally : false
+ Aligned Inside Vertically : true
+ Aligned Inside Centrally : false
+**
+
+Sample Output For Near:
+**
+ Element is 'near' (on top right of) the other element to which it is compared to.
+
+ Space Between Element Edges In Pixels
+ My Top & Other's Bottom : 1908
+ My Bottom & Other's Top : 1598
+ My Left & Other's Right : 373
+ My Right & Other's Left : 722
+
+ Alignment Between Elements
+ Top Aligned : false
+ Bottom Aligned : false
+ Left Aligned : false
+ Right Aligned : false
+ Aligned Inside Horizontally : false
+ Aligned Inside Vertically : false
+ Aligned Inside Centrally : false
+**
+
+While most functions in the API were meant to be used directly into assertions, this specific function describes the relation between the two web elements.
 
 # [BrowserStack](https://www.browserstack.com/start) is helping us getting better: 
 

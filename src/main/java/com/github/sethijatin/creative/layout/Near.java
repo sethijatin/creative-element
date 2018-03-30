@@ -87,4 +87,14 @@ public class Near {
     public boolean onRightOf(CreativeElement e, int pxMin, int pxMax) {
         return isNear(e) && pxMin <= distanceBetweenMyLeftAndOtherRight(e) && distanceBetweenMyLeftAndOtherRight(e) <= pxMax;
     }
+
+    protected String distanceBetweenEdges(CreativeElement e){
+
+        String distance = "My Top & Other's Bottom : " + Math.abs(distanceBetweenMyTopAndOtherBottom(e)) + "\n"
+                        + "My Bottom & Other's Top : " + Math.abs(distanceBetweenMyBottomAndOtherTop(e)) + "\n"
+                        + "My Left & Other's Right : " + Math.abs(distanceBetweenMyLeftAndOtherRight(e)) + "\n"
+                        + "My Right & Other's Left : " + Math.abs(distanceBetweenMyRightAndOtherLeft(e)) + "\n";
+        return distance;
+    }
+
 }

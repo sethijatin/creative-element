@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.sethijatin.creative.layout</groupId>
     <artifactId>creative-element</artifactId>
-    <version>1.0</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
     <name>Layout-Testing</name>
 

@@ -56,4 +56,12 @@ public class On {
         }
     }
 
+    protected String distanceBetweenEdges(CreativeElement e){
+
+        String distance = "Top    : " + Math.abs(distanceBetweenTopEdges(e)) + "\n"
+                + "Bottom : " + Math.abs(distanceBetweenBottomEdges(e)) + "\n"
+                + "Left   : " + Math.abs(distanceBetweenLeftEdges(e)) + "\n"
+                + "Right  : " + Math.abs(distanceBetweenRightEdges(e)) + "\n";
+        return distance;
+    }
 }

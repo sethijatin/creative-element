@@ -1,5 +1,7 @@
 package com.github.sethijatin.creative.layout;
 
+import java.util.HashMap;
+
 public class Inside {
 
     private CyclicQuad quad;
@@ -65,5 +67,14 @@ public class Inside {
             default:
                 return -32000;
         }
+    }
+
+    protected String distanceBetweenEdges(CreativeElement e){
+
+        String distance = "Top    : " + Math.abs(distanceBetweenTopEdges(e)) + "\n"
+                + "Bottom : " + Math.abs(distanceBetweenBottomEdges(e)) + "\n"
+                + "Left   : " + Math.abs(distanceBetweenLeftEdges(e)) + "\n"
+                + "Right  : " + Math.abs(distanceBetweenRightEdges(e)) + "\n";
+        return distance;
     }
 }
