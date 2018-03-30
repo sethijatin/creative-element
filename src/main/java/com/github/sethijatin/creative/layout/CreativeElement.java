@@ -48,4 +48,8 @@ public class CreativeElement {
     public Inside isInside(){
         return new Inside(this);
     }
+
+    public Describe describe(){
+        return  new Describe(this);
+    }
 }

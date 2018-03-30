@@ -54,4 +54,18 @@ public class Aligned {
     public boolean right (CreativeElement e){
         return this.quad.getPoint_C().getX() == e.getCyclicQuad().getPoint_C().getX();
     }
+
+    protected String getAlignmentDetails (CreativeElement e){
+
+        String aligned = "Top Aligned : " + this.top(e) + "\n"
+                       + "Bottom Aligned : " + this.bottom(e) + "\n"
+                       + "Left Aligned : " + this.left(e) + "\n"
+                       + "Right Aligned : " + this.right(e) + "\n"
+                       + "Aligned Inside Horizontally : " + this.insideHorizontally(e) + "\n"
+                       + "Aligned Inside Vertically : " + this.insideVertically(e) + "\n"
+                       + "Aligned Inside Centrally : " + this.insideCentrally(e);
+
+        return aligned;
+    }
+
 }
