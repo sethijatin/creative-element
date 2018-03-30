@@ -148,13 +148,15 @@ elementOne.isAligned().insideCentrally(elementTwo);
 
 #### Describe
 
+While most functions in the API were meant to be used directly into assertions, this specific function describes the relation between the two web elements.
+
 ```java
 elementOne.describe().describeRelationTo(elementTwo);
 ```
 
 Sample Output For Inside:
 
-**
+```java
  Element is 'inside' the other element to which it is compared to.
 
  Space Between Element Edges In Pixels
@@ -171,10 +173,11 @@ Sample Output For Inside:
  Aligned Inside Horizontally : false
  Aligned Inside Vertically : true
  Aligned Inside Centrally : false
-**
+```
 
 Sample Output For Near:
-**
+
+```java
  Element is 'near' (on top right of) the other element to which it is compared to.
 
  Space Between Element Edges In Pixels
@@ -191,9 +194,7 @@ Sample Output For Near:
  Aligned Inside Horizontally : false
  Aligned Inside Vertically : false
  Aligned Inside Centrally : false
-**
-
-While most functions in the API were meant to be used directly into assertions, this specific function describes the relation between the two web elements.
+```
 
 # [BrowserStack](https://www.browserstack.com/start) is helping us getting better: 
 
