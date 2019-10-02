@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/sethijatin/creative-element.svg)](https://jitpack.io/#sethijatin/creative-element) [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)](https://www.browserstack.com/automate/public-build/<badge_key>)
+[![](https://jitpack.io/v/sethijatin/creative-element.svg)](https://jitpack.io/#sethijatin/creative-element))
 
 # Project For Facilitating Page Layout Testing For Websites
 The project aims to provide a simple light weight object (Creative Element) to compare the layout of one Web Element with respect to the Other.
